@@ -1,8 +1,14 @@
 name: Self Report
 
+#on:
+#  schedule:
+#    - cron: "55 11 * * *"
+#  workflow_dispatch:
+
+
 on:
   schedule:
-    - cron: "55 13,4 * * *"
+    - cron: "{random.int(10)} {random.int[10,15]} * * *"
   workflow_dispatch:
 
 jobs:
